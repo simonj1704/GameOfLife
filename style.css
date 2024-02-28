@@ -1,0 +1,46 @@
+:root{
+    --GRID_WIDTH: 0;
+}
+
+body{
+    background-color: #666;
+    color: #8b8;
+    font-family: Arial, sans-serif;
+    
+}
+
+#board{
+    display: grid;
+    grid-template-columns: repeat(var(--GRID_WIDTH), max-content);
+    gap: 0.5em;
+}
+
+.cell{
+    width: 64px;
+    aspect-ratio: 1/1;
+    font-size: 300%;
+
+    background-color: #888;
+    border: 4px outset darkgray;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    cursor: pointer;
+}
+
+.alive{
+    background-color: rgb(122, 228, 122);
+}
+
+button{
+    padding: 0.5em 1em;
+    margin: 0.5em;
+    font-size: 100%;
+    cursor: pointer;
+}
+
+.reading{
+    background-color: #f88;
+}
